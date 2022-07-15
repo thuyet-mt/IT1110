@@ -24,6 +24,7 @@ int main()
             for (j = 0; j < n - 1 - i; j++)
             {   // tại sao lại có -i?
                 // vì sau mỗi lần lặp, số cặp cần so sánh lại giảm đi 1, do phần tử cuối cùng đã nằm đúng vị trí
+                // đây là bubble sort
                 if (arr.A[j] + arr.A[j + 1] >= temp)
                 {
                     temp = arr.A[j] + arr.A[j + 1];
