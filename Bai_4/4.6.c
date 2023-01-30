@@ -1,5 +1,5 @@
 Viết chương trình tính các tổng sau: 
-    S=1+x+x2+x3+⋯+xn
+    S=1+x+x^2+x^3+⋯+x^n
 Trong đó n là một số nguyên dương và x là một số thực bất kỳ được nhập từ bàn phím khi chạy chương trình. 
 Chú ý: Kiểm tra dữ liệu đầu vào của chương trình, nếu không đúng thì kết thúc chương trình và in ra màn hình Error.
 Mô tả dữ liệu đầu vào:
