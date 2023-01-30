@@ -14,7 +14,7 @@ For example:
     1                   |2.500000
     1.5                 |
 
-// All in main prog
+// All in main prog Style
 #include<stdio.h>
 #include<math.h>
 
@@ -35,7 +35,7 @@ int main(){
 }
 
 
-//Module Prog
+//Module Prog Style
 #include<stdio.h>
 #include<math.h>
 #include<stdlib.h>
