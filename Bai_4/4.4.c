@@ -1,3 +1,23 @@
+Problem:
+Đề bài:
+Viết chương trình thực hiện các công việc sau:
+- Nhập 2 số nguyên dương 𝑎, 𝑏 bất kỳ
+- Tìm ước số chung lớn nhất và bội số chung nhỏ nhất của 2 số đó
+- Hiển thị kết quả ra màn hình
+Chú ý: Kiểm tra dữ liệu đầu vào của chương trình, nếu không đúng thì kết thúc chương trình và in ra màn hình ERROR.
+Mô tả dữ liệu đầu vào:
+    Số nguyên dương a
+    Số nguyên dương b
+Mô tả dữ liệu đầu ra:
+    Ước số chung lớn nhất
+    Bội số chung nhỏ nhất
+    
+For example:
+    Dữ liệu đầu vào |	Kết quả
+    1               |   1 
+    2               |   2
+
+
 //All in main function ver
 #include <stdio.h>
 
