@@ -2,7 +2,7 @@
 Lập chương trình thực hiện các công việc sau:
 1. Nhập 3 số thực a,b,c bất kì.
 2. Giải và biện luận phương trình bậc 2:
-            ax2+bx+c=0
+            ax^2+bx+c=0
 Tính cả trường hợp với a=0 và trường hợp nghiệm phức
 Chú ý : 
     Phương trình vô nghiệm in ra màn hình Phuong trinh vo nghiem
