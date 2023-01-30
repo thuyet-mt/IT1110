@@ -1,3 +1,28 @@
+Đề bài:
+Lập chương trình thực hiện các công việc sau:
+1. Nhập 3 số thực a,b,c bất kì.
+2. Giải và biện luận phương trình bậc 2:
+            ax2+bx+c=0
+Tính cả trường hợp với a=0 và trường hợp nghiệm phức
+Chú ý : 
+    Phương trình vô nghiệm in ra màn hình Phuong trinh vo nghiem
+    Phương trình vô số nghiệm} in ra màn hình Phuong trinh vo so nghiem
+    Nếu phương trình có 2 nghiệm phân biệt thì hiển thị nghiệm lớn trước rồi mới đến nghiệm bé
+Mô tả giá trị đầu vào:
+    Số thực a
+    Số thực b
+    Số thực c
+Mô tả giá trị đầu ra:
+    Kết quả
+For example:
+
+Dữ liệu đầu vào	    Kết quả
+2               |   1.000000
+-3              |   0.500000
+1               |
+
+
+
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -30,8 +55,8 @@ int main()
         }
         if (d < 0)
         {
-            printf("%f+%.2fi\n", (-b) / (2 * a), (float)sqrt(-d) / (2 * a));
-            printf("%f-%.2fi\n", (-b) / (2 * a), (float)sqrt(-d) / (2 * a));
+            printf("%f+%.6fi\n", (-b) / (2 * a), (float)sqrt(-d) / (2 * a));
+            printf("%f-%.6fi\n", (-b) / (2 * a), (float)sqrt(-d) / (2 * a));
         }
         return 0;
     }
