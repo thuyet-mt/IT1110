@@ -11,8 +11,8 @@ Giá trị của S
 
 For example:
     Dữ liệu đầu vào	|Kết quả
-    1               |2.500000
-    1.5             |
+    1                   |2.500000
+    1.5                 |
 
 // All in main prog
 #include<stdio.h>
