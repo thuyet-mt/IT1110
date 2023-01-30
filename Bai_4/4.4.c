@@ -1,3 +1,39 @@
+//All in main function ver
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    if (a > 1000 || a < 0 || b > 1000 || b < 0)
+    {
+        printf("ERROR");
+        return 0;
+    }
+    else{
+        // UCLN
+        int UCLN, max;
+        if(a>b){
+            max = a;
+        }
+        else max =b;
+        for(int i =1;i<max;i++){
+            if(a%i==0&&b%i==0){
+                UCLN = i;
+            }
+        }
+        printf("%d", UCLN);
+        int BCNN;
+        for(int j =a*b;j>1;j--){
+            if(j%a==0&&j%b==0){
+                BCNN = j;
+            }
+        }
+        printf("\n%d", BCNN);
+    }
+    
+}
+// Module Programming ver
 #include <stdio.h>
 #include <stdlib.h>
 int find_max(int a, int b)
