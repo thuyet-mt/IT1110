@@ -22,10 +22,15 @@ For example:
 #include<math.h>
 int factorial(int a){
     int factorial = 1;
-    for (int i =1;i<=a;i++){
-        factorial = factorial * i;
+    if (a == 0){
+        return 1;
     }
-    return factorial;
+    else{
+        for (int i =1;i<=a;i++){
+            factorial = factorial * i;
+        }
+        return factorial;
+    }
 }
 int main(){
     double S=0, x;
