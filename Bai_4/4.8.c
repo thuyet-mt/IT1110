@@ -13,8 +13,8 @@ Mô tả dữ liệu đầu ra:
 
 For example:
             Dữ liệu đầu vào	| Kết quả
-            1               | 2.500000
-            1.5             |
+            1                   | 2.500000
+            1.5                 |
             
 
 
