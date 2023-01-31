@@ -12,8 +12,8 @@ Giá trị của S
 
 For example:
 Dữ liệu đầu vào	    Kết quả
-1               |-0.500000
-1.5             |
+1                   |-0.500000
+1.5                 |
 
 
 
