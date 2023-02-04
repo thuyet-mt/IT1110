@@ -17,6 +17,7 @@ For example:
     1               |   1 
     2               |   2
 
+Trên mạng có rất nhiều cách giải, nhưng mình chọn cách này vì nó dễ hiểu :< hoặc do mình ngu :)
 
 //All in main function ver
 #include <stdio.h>
@@ -31,17 +32,33 @@ int main()
         return 0;
     }
     else{
-        // UCLN
+        // Đoạn này chỉ đơn giản là tìm max của 2 số a và b
         int UCLN, max;
         if(a>b){
             max = a;
         }
         else max =b;
+        //cho i chạy từ 1 tới max, nếu cả a và b đều chia hết cho i thì rõ ràng i là ước chung của a và b
+        //mà i càng gần max thì i càng to, tức là ước sẽ càng to => chính là UCLN
         for(int i =1;i<max;i++){
             if(a%i==0&&b%i==0){
                 UCLN = i;
             }
         }
+        /*
+        Hoặc có thể làm như sau
+           |================================|
+           |    for(int i =max;i>0;i--){    |
+           |        if(a%i==0&&b%i==0){     |
+           |            UCLN = i;           |
+           |            break;              |
+           |        }                       |
+           |    }                           |
+           |================================|
+        Ta cho vòng lặp chạy ngược, từ max về 1, vì thế giá trị i nhận được đầu tiên đã là giá trị lớn nhất rồi, sau đó vòng lặp sẽ liên tục thực hiện, giá trị của i cũng sẽ liên tục thay đổi
+        Vì thế để giữ giá trị i max (tức UCLN) ta phải break vòng lặp ngay từ lần chạy thành công đầu tiên.
+        Ý tưởng tìm BCNN tương tự
+        */
         printf("%d", UCLN);
         int BCNN;
         for(int j =a*b;j>1;j--){
