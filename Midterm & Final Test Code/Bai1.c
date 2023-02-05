@@ -1,4 +1,4 @@
-Đề bài:
+Đề bài (Cảm ơn Vũ Thị Thu Nga đã scan đề giúp mình):
 Cho biểu thức xấp xỉ In(1+x) như bên dưới.
     ln (1+x) = x-x²/2+x³/3-x⁴/4+... +(-1)^(n-1).xⁿ/n
 Biểu thức giới hạn bởi xⁿ/n<e với số e cho trước (với n là số nguyên, e là số thực).
