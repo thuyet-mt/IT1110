@@ -52,12 +52,12 @@ int main(){
 	
 }
 /*
-	Dòng 13:	i = 1  => trong while: pow(x,i)/i = pow(1,1)/1 = 1 		>  e = 0.1, sum = 1		, sau đó i++ = 2
-				i = 2  => trong while: pow(x,i)/i = pow(1,2)/2 = 0.5 	>  e = 0.1, sum = 0.5	, sau đó i++ = 3
-				i = 3  => trong while: pow(x,i)/i = pow(1,3)/3 = 0.33333 >  e = 0.1, sum = 0.83333, sau đó i++ = 4
+	Dòng 13:		i = 1  => trong while: pow(x,i)/i = pow(1,1)/1 = 1 	 >= e = 0.1, sum = 1	  , sau đó i++ = 2
+				i = 2  => trong while: pow(x,i)/i = pow(1,2)/2 = 0.5 	 >= e = 0.1, sum = 0.5	  , sau đó i++ = 3
+				i = 3  => trong while: pow(x,i)/i = pow(1,3)/3 = 0.33333 >= e = 0.1, sum = 0.83333, sau đó i++ = 4
 				...
-				i = 9  => trong while: pow(x,i)/i = pow(1,2)/2 = 0.11111 >  e = 0.1, sum = 0.63452, sau đó i++ = 10
-				i = 10 => trong while: pow(x,i)/i = pow(1,2)/2 = 0.1 	>= e = 0.1, sum = 0.64563, sau đó i++ = 11
+				i = 9  => trong while: pow(x,i)/i = pow(1,2)/2 = 0.11111 >= e = 0.1, sum = 0.63452, sau đó i++ = 10
+				i = 10 => trong while: pow(x,i)/i = pow(1,2)/2 = 0.1 	 >= e = 0.1, sum = 0.64563, sau đó i++ = 11
 	Đây là log ghi lại vòng while chạy mà mình debug (debug là gì bạn tự search google nhé)
 	Nhìn log ta thấy tại i = 10 thì thoả mãn điều kiện của n (pow(x,n)/n >= e, n càng to thì biểu thức pow(x,n)/n càng nhỏ), 
 	tuy nhiên kết thúc vòng while ta lại thấy i =11, vì thế ta sẽ in ra i -1 ở dòng 20
