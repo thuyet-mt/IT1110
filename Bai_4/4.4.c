@@ -40,7 +40,7 @@ int main()
         else min =b;
         //cho i chạy từ 1 tới min, nếu cả a và b đều chia hết cho i thì rõ ràng i là ước chung của a và b
         //mà i càng gần min thì i càng to, tức là ước sẽ càng to => chính là UCLN
-        for(int i =1;i<min;i++){
+        for(int i =1;i<=min;i++){
             if(a%i==0&&b%i==0){
                 UCLN = i;
             }
@@ -48,7 +48,7 @@ int main()
         /*
         Hoặc có thể làm như sau
            |================================|
-           |    for(int i =min;i>0;i--){    |
+           |    for(int i =min;i>=0;i--){    |
            |        if(a%i==0&&b%i==0){     |
            |            UCLN = i;           |
            |            break;              |
@@ -65,7 +65,7 @@ int main()
             max = b;
         }
         else max = a;
-        for(int j =max;j<a*b;j++){
+        for(int j =max;j<=a*b;j++){
             if(j%a==0&&j%b==0){
                 BCNN = j;
                 break;
