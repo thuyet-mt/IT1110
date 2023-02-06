@@ -32,7 +32,7 @@ int main()
         return 0;
     }
     else{
-        // Đoạn này chỉ đơn giản là tìm max của 2 số a và b
+        // Đoạn này chỉ đơn giản là tìm min của 2 số a và b
         int UCLN, min;
         if(a<b){
             min = a;
