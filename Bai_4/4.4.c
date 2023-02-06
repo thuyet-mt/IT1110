@@ -33,14 +33,14 @@ int main()
     }
     else{
         // Đoạn này chỉ đơn giản là tìm max của 2 số a và b
-        int UCLN, max;
-        if(a>b){
-            max = a;
+        int UCLN, min;
+        if(a<b){
+            min = a;
         }
-        else max =b;
-        //cho i chạy từ 1 tới max, nếu cả a và b đều chia hết cho i thì rõ ràng i là ước chung của a và b
-        //mà i càng gần max thì i càng to, tức là ước sẽ càng to => chính là UCLN
-        for(int i =1;i<max;i++){
+        else min =b;
+        //cho i chạy từ 1 tới min, nếu cả a và b đều chia hết cho i thì rõ ràng i là ước chung của a và b
+        //mà i càng gần min thì i càng to, tức là ước sẽ càng to => chính là UCLN
+        for(int i =1;i<min;i++){
             if(a%i==0&&b%i==0){
                 UCLN = i;
             }
@@ -48,22 +48,23 @@ int main()
         /*
         Hoặc có thể làm như sau
            |================================|
-           |    for(int i =max;i>0;i--){    |
+           |    for(int i =min;i>0;i--){    |
            |        if(a%i==0&&b%i==0){     |
            |            UCLN = i;           |
            |            break;              |
            |        }                       |
            |    }                           |
            |================================|
-        Ta cho vòng lặp chạy ngược, từ max về 1, vì thế giá trị i nhận được đầu tiên đã là giá trị lớn nhất rồi, sau đó vòng lặp sẽ liên tục thực hiện, giá trị của i cũng sẽ liên tục thay đổi
-        Vì thế để giữ giá trị i max (tức UCLN) ta phải break vòng lặp ngay từ lần chạy thành công đầu tiên.
+        Ta cho vòng lặp chạy ngược, từ min về 1, vì thế giá trị i nhận được đầu tiên đã là giá trị lớn nhất rồi, sau đó vòng lặp sẽ liên tục thực hiện, giá trị của i cũng sẽ liên tục thay đổi
+        Vì thế để giữ giá trị i đầu tiên thoả mãn vòng lặp này (tức UCLN) ta phải break vòng lặp ngay từ lần chạy thành công đầu tiên (tìm được i đầu tiên thoả mãn là dừng).
         Ý tưởng tìm BCNN tương tự
         */
         printf("%d", UCLN);
         int BCNN;
-        for(int j =a*b;j>1;j--){
+        for(int j =min;j<a*b;j++){
             if(j%a==0&&j%b==0){
                 BCNN = j;
+                break;
             }
         }
         printf("\n%d", BCNN);
