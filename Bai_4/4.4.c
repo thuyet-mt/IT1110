@@ -59,9 +59,13 @@ int main()
         Vì thế để giữ giá trị i đầu tiên thoả mãn vòng lặp này (tức UCLN) ta phải break vòng lặp ngay từ lần chạy thành công đầu tiên (tìm được i đầu tiên thoả mãn là dừng).
         Ý tưởng tìm BCNN tương tự
         */
-        printf("%d", UCLN);
-        int BCNN;
-        for(int j =min;j<a*b;j++){
+       printf("%d", UCLN);
+        int BCNN, max;
+        if(a<b){
+            max = b;
+        }
+        else max = a;
+        for(int j =max;j<a*b;j++){
             if(j%a==0&&j%b==0){
                 BCNN = j;
                 break;
