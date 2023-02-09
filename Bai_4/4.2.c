@@ -124,6 +124,53 @@ int main()
 }
 
 
+*************************************************************
+Bổ sung bài toán đếm số nguyên tố trong dãy
+#include <stdio.h>
+#include <math.h>
+#define TRUE 1
+#define FALSE 0
 
+int snt(int a)
+{
+    if (a == 2){
+        return TRUE;
+    }
+    else if (a < 2||a%2==0){
+        return FALSE;
+    }
+    else if (a > 2 && a%2 != 0){ 
+        int i, count=2;
+        for (i = 2; i <= sqrt(a); i++){
+            if (a % i == 0){
+                count++;
+            }
+        }
+        if(count==2){
+            return TRUE;
+        }
+        else{
+            return FALSE;
+        }
+    }
+
+    
+}
+int main()
+{
+    int n;int sum =0;
+    scanf("%d", &n);
+    int A[n];
+    if(1<=n&&n<=30){
+        
+        for(int i =0;i<n;i++){
+            scanf("%d", &A[i]);
+            if(snt(A[i])==TRUE){
+                sum++;
+            }
+        }
+        printf("%d", sum);
+    }
+}
 
 
