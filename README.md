@@ -1,6 +1,2 @@
-# IT1110_
-Hello mọi người. Mình là Thuyết, sv bkhn ngành ET E9, mình làm repo này với mục đích lưu trữ các tài liệu về môn tin học đại cương, cụ thể là lập trình C của ĐH BKHN
-
-Nếu các bạn có thắc mắc về lập trình C, hoặc muốn đóng góp bổ sung câu hỏi hoặc bài làm của mình có vấn đề gì thì có thể trực tiếp ấn vào nút issues trên màn hình hoặc có thể inbox trực tiếp tới fb của mình https://www.facebook.com/thuyet.mai.14072001
-
-Mình sẽ cố gắng update thường xuyên các câu hỏi/bài thực hành tại đây. 
+# IT1110
+This project was made while I was a teaching assistant in general computer science (students will be taught C programming when taking this course). This includes C programming exercises, with questions and sample solutions. If you have any questions, please create issues
