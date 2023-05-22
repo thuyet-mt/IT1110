@@ -55,7 +55,7 @@ void chuanHoa(char a[])
 int main()
 {
     char a[100];
-    //printf("Moi ban nhap chuoi:"); 
+    //printf("Nhap chuoi:"); 
     fgets(a, sizeof(a), stdin);
     chuanHoa(a);
     //printf("Chuoi duoc chuan hoa:");
