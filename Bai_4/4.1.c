@@ -1,6 +1,6 @@
 Bài 4.1 Viết chương trình
 - Nhập vào số nguyên bất kỳ.
-- Tính giai thừa của .
+- Tính giai thừa của số nguyên đó.
 Chú ý:
 - Sử dụng vòng lặp for để giải quyết bài toán.
 - Nếu dữ liệu đầu vào không đúng mô tả của đề bài, hiển thị ra màn hình
